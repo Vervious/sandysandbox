@@ -1,8 +1,7 @@
 dist: xenial
 go:
   - "1.12"
-gobuild_args:
-  - golang.org/x/crypto/scrypt
 script:
+  - go get golang.org/x/crypto/scrypt
   - go run ./main.go
   - go run -race ./main.go
