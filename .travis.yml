@@ -1,0 +1,6 @@
+dist: xenial
+go:
+  - "1.12"
+script:
+  - go run ./main.go
+  - go run -race ./main.go
